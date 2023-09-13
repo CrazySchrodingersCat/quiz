@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Quiz:</h1>
+  <div class="questions">
+    <app-question *ngFor="let q of QuestionsList">ff</app-question>
+
+    <!-- <mat-list>
+      <mat-list-item *ngFor="let q of QuestionsList">
+        <h3 matListItemTitle>{{q.question}}</h3>
+        <mat-list *ngFor="let answer of q.options">
+          <mat-list-item>{{answer}}</mat-list-item>
+
+        </mat-list>
+      </mat-list-item>
+    </mat-list> -->
+
+    <button mat-button>Check answers</button>
+    <button mat-button>New Game</button>
+  </div>
+</div>
