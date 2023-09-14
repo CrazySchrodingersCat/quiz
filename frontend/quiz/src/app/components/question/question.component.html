@@ -1,5 +1,17 @@
-<h3>{{question.question}}</h3>
-<h5 *ngFor = "let answer of question.options" >{{answer}}</h5>
-<h1>test</h1>
-
-
+<h3>{{ question.question }}</h3>
+<mat-radio-group [(ngModel)]="selectedAnswer" class="radio-group">
+  <mat-radio-button
+    class="radio-button"
+    *ngFor="let answer of question.options"
+    [value]="answer"
+    (click)="checkAnswer()"
+    >{{ answer }}</mat-radio-button
+  >
+</mat-radio-group>
+<div
+  *ngIf="isSelected"
+  [ngClass]="{ correct: isCorrect, incorrect: !isCorrect }"
+>
+  {{ isCorrect ? "Correct!" : "Incorrect." }}
+</div>
+{{ selectedAnswer }}

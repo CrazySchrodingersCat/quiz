@@ -1,0 +1,22 @@
+/* Rode tekst voor incorrecte antwoorden */
+.incorrect {
+    color: #f05323;
+    font-weight: bold;
+  }
+  
+  /* Groene tekst voor correcte antwoorden */
+  .correct {
+    color:  #5ec4b4;  
+    font-weight: bold;
+
+  }
+  .radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    align-items: flex-start;
+  }
+  
+  .radio-button {
+    margin: 5px;
+  }
