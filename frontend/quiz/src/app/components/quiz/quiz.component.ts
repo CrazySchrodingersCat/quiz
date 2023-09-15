@@ -10,16 +10,16 @@ import { QuizService } from 'src/app/services/quiz.service';
 export class QuizComponent implements OnInit {
   QuestionsList: Question[] = [
     {
-      id: 1,
+      // id: 1,
       type: 'multiple',
-      question:
+      text:
         'Which of the following African countries was most successful in resisting colonization?',
       options: ['Ethiopia', 'C&ocirc;te d&rsquo;Ivoire', 'Congo', 'Namibia'],
     },
     {
-      id: 2,
+      // id: 2,
       type: 'boolean',
-      question: 'Donkey Kong was originally set to be a Popeye arcade game.',
+      text: 'Donkey Kong was originally set to be a Popeye arcade game.',
       options: ['False', 'True'],
     },
   ];
@@ -33,9 +33,7 @@ export class QuizComponent implements OnInit {
   }
   getQuestions() {
     this.quizService.getQuestions().subscribe((data) => {
-      console.log(data);
-      this.fetchedData = data;
-      this.questions = this.fetchedData.results;
+      this.questions = data;
       console.log(this.questions);
     });
   }

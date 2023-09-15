@@ -1,0 +1,79 @@
+openapi: 3.0.0
+info:
+  title: My API
+  version: 1.0.0
+paths:
+  /questions:
+    get:
+      summary: Get five questions
+      operationId: getQuestions
+      responses:
+        '200':
+          description: A successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Question'
+  /checkanswers:
+    post:
+      summary: Verify if the user's answers are correct
+      operationId: checkAnswers
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/QuestionAnswer'
+      responses:
+        '200':
+          description: A successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnswerResult'
+components:
+  schemas:
+    Question:
+      type: object
+      description: Question from Trivia
+      properties:
+        text:
+          type: string
+          description: Question text
+        options:
+          type: array
+          description: Question options
+          items:
+            type: string
+      required:
+        - text
+        - options
+    QuestionAnswer:
+      type: object
+      description: Question answer
+      properties:
+        text:
+          type: string
+          description: Question text
+        answer:
+          type: string
+          description: Question answer
+      required:
+        - text
+        - answer
+    AnswerResult:
+      type: object
+      description: Answer result
+      properties:
+        text:
+          type: string
+          description: Question text
+        result:
+          type: boolean
+          description: Answer result
+      required:
+        - text
+        - result
+

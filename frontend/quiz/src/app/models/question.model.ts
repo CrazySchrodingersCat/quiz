@@ -1,7 +1,7 @@
 export class Question {
-  id!: number;
+  // id!: number;
   type: string;
-  question: string;
+  text: string;
   options: string[];
 
   constructor(
@@ -10,9 +10,9 @@ export class Question {
     options: string[],
     type: string = 'multiple'
   ) {
-    this.question = text;
+    this.text = text;
     this.options = options;
     this.type = type;
-    this.id = id;
+    // this.id = id;
   }
 }

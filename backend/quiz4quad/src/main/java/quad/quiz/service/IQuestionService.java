@@ -1,12 +1,13 @@
 package quad.quiz.service;
 
-//import quad.quiz.domain.Question;
-import quad.quiz.domain.dto.QuestionResponse;
+import quad.quiz.openapi.model.AnswerResult;
+import quad.quiz.openapi.model.Question;
+import quad.quiz.openapi.model.QuestionAnswer;
 
 import java.util.List;
 
 public interface IQuestionService {
-    List<QuestionResponse> getQuestions();
-    List<Boolean> checkAnswers(Long questionId, List<String> answers);
-//    List<Question> fetchQuestionsFromAPI();
+    List<Question> getQuestions();
+
+    AnswerResult validateQuestionAnswer(QuestionAnswer questionAnswers);
 }
