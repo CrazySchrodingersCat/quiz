@@ -7,6 +7,7 @@ import quad.quiz.integration.dto.QuestionDTO;
 import quad.quiz.openapi.model.Question;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Mapper
@@ -21,9 +22,9 @@ public interface QuestionMapper {
     Question map(QuestionDTO dto);
 
     default List<String> dtoToOptions(QuestionDTO dto) {
-        List<String> options = new ArrayList<>();
-        options.addAll(dto.getIncorrectAnswers());
+        List<String> options=new ArrayList<>(dto.getIncorrectAnswers());
         options.add(dto.getCorrectAnswer());
+        Collections.shuffle(options);
         return options;
     }
 }

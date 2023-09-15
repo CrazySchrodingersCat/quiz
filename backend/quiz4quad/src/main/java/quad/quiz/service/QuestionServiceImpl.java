@@ -22,28 +22,26 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class QuestionServiceImpl implements IQuestionService {
 
-    private static final Integer NUMBER_OF_QUESTIONS = 5;
+    private static final Integer NUMBER_OF_QUESTIONS=5;
     private final OpenTriviaClient openTriviaClient;
 
     @Override
     public List<Question> getQuestions() {
         log.info("Get questions");
-        var questionDTOs = get5MultipleChoiceBookMediumQuestions();
+        var questionDTOs=get5MultipleChoiceBookMediumQuestions();
         return QuestionMapper.INSTANCE.map(questionDTOs);
     }
 
 
-
     @Override
     public AnswerResult validateQuestionAnswer(QuestionAnswer answer) {
-       log.info("Validate answers for questions {}", answer.getText());
-        var questionDTOs = get5MultipleChoiceBookMediumQuestions();
-        var result = getAnswerResult(questionDTOs, answer);
-           var answerResult = new AnswerResult();
-           answerResult.setText(answer.getText());
-           answerResult.setResult(result);
-            return answerResult;
-
+        log.info("Validate answers for questions {}", answer.getText());
+        var questionDTOs=get5MultipleChoiceBookMediumQuestions();
+        var result=getAnswerResult(questionDTOs, answer);
+        var answerResult=new AnswerResult();
+        answerResult.setText(answer.getText());
+        answerResult.setResult(result);
+        return answerResult;
     }
 
     private List<QuestionDTO> get5MultipleChoiceBookMediumQuestions() {
