@@ -51,7 +51,7 @@ Frontend Setup
 
 Backend
 
-After building the application, you can run it using Maven:
+- After building the application, you can run it using Maven:
 
     ```bash
     mvn spring-boot:run
@@ -65,12 +65,11 @@ Once the application is running, you can access it in your web browser at http:/
 
 Frontend
 
-Navigate to frontend directory and start the frontend development server:
+- Navigate to frontend directory and start the frontend development server:
 
     ```bash
-    ng serve -o
+     ng serve -o
 
-
-The frontend development server should be running at http://localhost:4200.
+- The frontend development server should be running at http://localhost:4200.
 
 Open your web browser and navigate to http://localhost:4200 to access the frontend.
