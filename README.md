@@ -1,6 +1,6 @@
-# QUIZ. Iplementation with Open Travia Database
+# QUIZ. Iplementation of Open Travia Database
 
-A Java web application for answering trivia questions.
+A full-stack web application with a Java backend and an Angular frontend for answering trivia questions.
 
 ## Table of Contents
 
@@ -80,11 +80,12 @@ Before you begin, ensure you have met the following requirements:
    git clone https://github.com/yourusername/your-application.git
 Open the project in your preferred IDE if you are using one.
 
-Build the application using Maven:
+Navigate to backend directory backend/quiz4quad and build the application using Maven:
 
      ```bash
-    mvn clean install
-    Running the Application
+     mvn clean install
+    
+###Running the Application
     
 After building the application, you can run it using Maven:
 
