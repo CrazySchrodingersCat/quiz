@@ -20,3 +20,10 @@
   .radio-button {
     margin: 5px;
   }
+  button{
+    color: white;
+    border-radius: 5px;
+    background-color: #5ec4b4;    
+    margin: 15px 0;
+    width: 10%;
+  }

@@ -1,5 +1,4 @@
 import {
-  ChangeDetectionStrategy,
   Component,
   Input,
   OnInit,
@@ -16,21 +15,17 @@ import { QuizService } from 'src/app/services/quiz.service';
 export class QuestionComponent implements OnInit {
   @Input() question!: Question;
   selectedAnswer: string = '';
-
   isSelected: boolean = false;
   isCorrect: boolean = false;
 
   constructor(private quizService: QuizService) {}
   ngOnInit(): void {}
   checkAnswer() {
-    console.log('SELECTED: ' + this.selectedAnswer);
-    let answer = new Answer(this.question.text, this.selectedAnswer);
-    console.log(answer);
-
-    this.quizService.checkAnswer(answer).subscribe((data) => {
-      console.log(data);
-      this.isCorrect = data.result;
-    });
+    this.quizService
+      .checkAnswer(new Answer(this.question.text, this.selectedAnswer))
+      .subscribe((data) => {
+        this.isCorrect = data.result;
+      });
     this.isSelected = true;
   }
 }

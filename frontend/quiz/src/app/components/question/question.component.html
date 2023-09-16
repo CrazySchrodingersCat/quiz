@@ -4,15 +4,14 @@
     class="radio-button"
     *ngFor="let answer of question.options"
     [value]="answer"
-    (click)="checkAnswer()"
+    [disabled]="isSelected"
     >{{ answer }}</mat-radio-button
   >
 </mat-radio-group>
-<button (click)="checkAnswer()">check</button>
+<button *ngIf="!isSelected" (click)="checkAnswer()">Check</button>
 <div
   *ngIf="isSelected"
   [ngClass]="{ correct: isCorrect, incorrect: !isCorrect }"
 >
-  {{ isCorrect ? "Correct!" : "Incorrect." }}
+  {{ selectedAnswer }} is {{ isCorrect ? "Correct!" : "Incorrect." }}
 </div>
-{{ selectedAnswer }}
