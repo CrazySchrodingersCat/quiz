@@ -16,11 +16,14 @@ A full-stack web application with a Java backend and an Angular frontend for ans
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
-
-- Java Development Kit (JDK) 11 or higher
-- Apache Maven (for building)
-- Git (optional but recommended for version control)
-- An Integrated Development Environment (IDE) like IntelliJ IDEA or Eclipse (optional but recommended)
+- **Backend**:
+  - Java Development Kit (JDK) 11 or higher
+  - Apache Maven (for building)
+  - Git (optional but recommended for version control)
+  - An Integrated Development Environment (IDE) like IntelliJ IDEA or Eclipse (optional but recommended)
+ 
+- **Frontend**:
+  - Node.js and npm (Node Package Manager)
 
 ## Getting Started
 
