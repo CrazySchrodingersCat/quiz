@@ -52,13 +52,14 @@ Frontend Setup
 Backend
 
 After building the application, you can run it using Maven:
-    ```bash
-    mvn spring-boot:run
+
+   ```bash
+   mvn spring-boot:run
 
 - Alternatively, you can run the JAR file generated during the build:
 
-    ```bash
-    java -jar target/your-application-1.0.0.jar
+   ```bash
+   java -jar target/your-application-1.0.0.jar
 
 Once the application is running, you can access it in your web browser at http://localhost:8080.
 
