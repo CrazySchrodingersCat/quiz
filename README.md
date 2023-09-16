@@ -53,8 +53,9 @@ Backend
 
 After building the application, you can run it using Maven:
 
-    ```bash
-    mvn spring-boot:run
+   ```bash
+   mvn spring-boot:run
+
 
 - Alternatively, you can run the JAR file generated during the build:
 
