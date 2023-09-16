@@ -8,6 +8,7 @@
     >{{ answer }}</mat-radio-button
   >
 </mat-radio-group>
+<button (click)="checkAnswer()">check</button>
 <div
   *ngIf="isSelected"
   [ngClass]="{ correct: isCorrect, incorrect: !isCorrect }"

@@ -34,7 +34,7 @@ export class QuizComponent implements OnInit {
   getQuestions() {
     this.quizService.getQuestions().subscribe((data) => {
       this.questions = data;
-      console.log(this.questions);
+      // console.log(this.questions);
     });
   }
  
