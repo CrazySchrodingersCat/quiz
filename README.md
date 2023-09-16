@@ -33,22 +33,26 @@ Before you begin, ensure you have met the following requirements:
 
    ```bash
    git clone https://github.com/CrazySchrodingersCat/quiz.git
+   
 2. Open the project in your preferred IDE if you are using one.
 
-3. Navigate to backend directory backend/quiz4quad and build the application using Maven:
+Backend Setup
+
+4. Navigate to backend directory backend/quiz4quad and build the application using Maven:
 
      ```bash
      mvn clean install
 
 Frontend Setup
-1. Navigate to frontend directory (or open it in VS Studio Code en use the integrated terminal)
-2. Install frontend dependencies:
+5. Navigate to frontend directory (or open it in VS Studio Code en use the integrated terminal)
+3. Install frontend dependencies:
 
     ```bash
     npm install
 
     
-###Running the Application
+### Running the Application
+
 Backend
 After building the application, you can run it using Maven:
 
