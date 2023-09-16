@@ -8,10 +8,6 @@ A full-stack web application with a Java backend and an Angular frontend for ans
 - [Getting Started](#getting-started)
   - [Building the Application](#building-the-application)
   - [Running the Application](#running-the-application)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Prerequisites
 
