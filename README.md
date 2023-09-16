@@ -69,6 +69,7 @@ Start the frontend development server:
   ```bash
   cd ../frontend
   ng serve
+
 The frontend development server should be running at http://localhost:4200.
 
 Open your web browser and navigate to http://localhost:4200 to access the frontend.
