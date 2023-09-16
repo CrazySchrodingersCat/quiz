@@ -44,6 +44,7 @@ Backend Setup
      mvn clean install
 
 Frontend Setup
+
 5. Navigate to frontend directory (or open it in VS Studio Code en use the integrated terminal)
 3. Install frontend dependencies:
 
