@@ -58,8 +58,8 @@ After building the application, you can run it using Maven:
 
 Alternatively, you can run the JAR file generated during the build:
 
-     ```bash
-     java -jar target/your-application-1.0.0.jar
+    ```bash
+    java -jar target/your-application-1.0.0.jar
 
 Once the application is running, you can access it in your web browser at http://localhost:8080.
 
@@ -67,8 +67,8 @@ Frontend
 
 Navigate to frontend directory and start the frontend development server:
 
-     ```bash
-     ng serve
+    ```bash
+    ng serve -o
 
 The frontend development server should be running at http://localhost:4200.
 
