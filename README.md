@@ -41,7 +41,7 @@ Backend Setup
 
 Frontend Setup
 
-5. Navigate to frontend directory (or open it in VS Studio Code en use the integrated terminal)
+5. Navigate to frontend directory frontend/quiz (or open it in VS Studio Code en use the integrated terminal)
 3. Install frontend dependencies:
 
     ```bash
@@ -65,7 +65,7 @@ Once the application is running, you can access it in your web browser at http:/
 
 Frontend
 
-- Navigate to frontend directory and start the frontend development server:
+- Navigate to frontend directory frontend/quiz and start the frontend development server:
 
     ```bash
      ng serve -o
