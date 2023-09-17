@@ -6,13 +6,17 @@ import org.springframework.cache.caffeine.CaffeineCacheManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.concurrent.TimeUnit;
+
 @Configuration
 public class CacheConfig {
 
     @Bean
     public CacheManager cacheManager() {
         var cacheManager = new CaffeineCacheManager();
-        cacheManager.setCaffeine(Caffeine.newBuilder().maximumSize(100));
+        cacheManager.setCaffeine(Caffeine.newBuilder()
+                .expireAfterWrite(2, TimeUnit.MINUTES)
+                .maximumSize(100));
         return cacheManager;
     }
 }

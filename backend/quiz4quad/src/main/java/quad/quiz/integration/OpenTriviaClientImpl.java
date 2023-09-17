@@ -32,9 +32,10 @@ public class OpenTriviaClientImpl implements OpenTriviaClient {
     @Cacheable("getQuestions")
     public List<QuestionDTO> getQuestions(Integer questionsNumber, QuestionType questionType, QuestionCategory questionCategory, QuestionDifficulty questionDifficulty) {
         log.info("Query OpenTrivia API for getting {} questions with type {}, category {}, difficulty {}", questionsNumber, questionType, questionCategory, questionDifficulty);
-        final var uri = buildUri(questionsNumber, questionType, questionCategory, questionDifficulty);
+        final var uri=buildUri(questionsNumber, questionType, questionCategory, questionDifficulty);
         try {
-            var questionResponse = restTemplate.exchange(uri, HttpMethod.GET, null, QuestionResponse.class).getBody();
+            var questionResponse=restTemplate.exchange(uri, HttpMethod.GET, null, QuestionResponse.class).getBody();
+            assert questionResponse != null;
             return questionResponse.getResults();
         } catch (RuntimeException ex) {
             log.error("OpenTrivia API on getting {} questions with type {}, category {}, difficulty {} has been failed: {}, ", questionsNumber, questionType, questionCategory, questionDifficulty, ex.getMessage());
