@@ -65,7 +65,7 @@ Once the application is running, you can access it in your web browser at http:/
 
 Frontend
 
-- Navigate to frontend directory and start the frontend development server:
+- Navigate to frontend directory frontend/qiz and start the frontend development server:
 
     ```bash
      ng serve -o
