@@ -8,6 +8,7 @@ A full-stack web application with a Java backend and an Angular frontend for ans
 - [Getting Started](#getting-started)
   - [Building the Application](#building-the-application)
   - [Running the Application](#running-the-application)
+  - [Viewing the Web Application](#viewing-the-Web-Application)
 
 ## Prerequisites
 
@@ -70,6 +71,14 @@ Frontend
     ```bash
      ng serve -o
 
+    
 - The frontend development server should be running at http://localhost:4200.
 
 Open your web browser and navigate to http://localhost:4200 to access the frontend.
+    
+### Viewing the Web Application
+
+You can access and interact with the web application through the following link: [Web Application Link](https://650aa0804e15e91fa77e955c--ornate-tanuki-97011f.netlify.app/)
+
+Please ensure that the backend server is running locally for full functionality.
+
